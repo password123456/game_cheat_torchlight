@@ -1,5 +1,5 @@
 // main.cpp : Defines the entry point for the DLL application.
-//
+// created by password123456
 
 
 #include <windows.h>
@@ -104,31 +104,31 @@ __declspec(naked) void GainExtraGold(void)
 
 DWORD WINAPI HACK(LPVOID lpParam)
 {
-	for(;;) //for¹®À¸·Î ¾ÈÇÏ°í Å° ÀÔ·Â Ã¼Å©´Â ¸øÇÏ´Â°¡??
+	for(;;) //forë¬¸ìœ¼ë¡œ ì•ˆí•˜ê³  í‚¤ ì…ë ¥ ì²´í¬ëŠ” ëª»í•˜ëŠ”ê°€??
 	{
 		Sleep(10);
 	
-		if (GetAsyncKeyState(VK_F1) & 0X8000)  // ¿©±â¼­ ºÎÅÍ DLL¿¡¼­ GetAsyncKeyState
+		if (GetAsyncKeyState(VK_F1) & 0X8000)  // ì—¬ê¸°ì„œ ë¶€í„° DLLì—ì„œ GetAsyncKeyState
 		{
-			CodecaveStatFull(0x00550A9D, StatFull, 2);
+			CodecaveStatFull($YOUR_ADDRESS, StatFull, 2);
 			MessageBeep(MB_ICONASTERISK);
 		}
 
 		if (GetAsyncKeyState(VK_F2) & 0X8000)
 		{
-			CodecaveSkillStatFull(0x00550ACE, SkillStatFull, 2);
+			CodecaveSkillStatFull($YOUR_ADDRESS, SkillStatFull, 2);
 			MessageBeep(MB_ICONASTERISK);
 		}
 
 		if (GetAsyncKeyState(VK_F3) & 0X8000)
 		{
-			CodecaveGainExtraEXP(0x0048BE52, GainExtraEXP, 1);
+			CodecaveGainExtraEXP($YOUR_ADDRESS, GainExtraEXP, 1);
 			MessageBeep(MB_ICONASTERISK);
 		}
 	
 		if (GetAsyncKeyState(VK_F4) & 0X8000)
 		{
-			CodecaveGainExtraGold(0x004839B9, GainExtraGold, 1);
+			CodecaveGainExtraGold($YOUR_ADDRESS, GainExtraGold, 1);
 			MessageBeep(MB_ICONASTERISK);
 		}
 	}
@@ -155,7 +155,7 @@ return TRUE;
 }
 
 
-VOID WriteBytesASM(DWORD destAddress, LPVOID patch, DWORD numBytes) // Writeprocess Memory ASM ¹öÁ¯
+VOID WriteBytesASM(DWORD destAddress, LPVOID patch, DWORD numBytes) // Writeprocess Memory ASM ë²„ì ¼
 {
 	DWORD oldProtect = 0;
 	DWORD srcAddress = PtrToUlong(patch);
