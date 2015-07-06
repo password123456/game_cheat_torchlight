@@ -1,0 +1,132 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 251, 326
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Torchlight - 4 Trainer"
+FONT 8, "Arial"
+BEGIN
+    LTEXT           "1. Torchlight 를 실행한다.",IDC_STATIC,18,202,86,8
+    GROUPBOX        "사용방법",IDC_STATIC,11,190,227,107
+    LTEXT           "2. 본 트레이너를 실행한다.",IDC_STATIC,18,214,95,8
+    LTEXT           "3. F9 키를 눌러 트레이너를 실행한다. (트레이너 상태 :         )",
+                    IDC_STATIC,18,225,219,8,0,WS_EX_TRANSPARENT
+    LTEXT           "키보드 F1 - 스탯 포인트 무한대 ",IDC_TEXT,28,252,120,9,
+                    0,WS_EX_TRANSPARENT
+    LTEXT           "sendmefuture@gmail.com",IDC_STATIC,147,306,84,8
+    LTEXT           "http://www.playgamewithcheat.com",IDC_STATIC,112,298,
+                    119,8
+    LTEXT           "키보드 F2 - 스킬 스탯 포인트 무한대  ",IDC_TEXT2,28,262,
+                    135,9,0,WS_EX_TRANSPARENT
+    CONTROL         116,IDC_STATIC,"Static",SS_BITMAP,10,9,232,176
+    LTEXT           "키보드 F3 - 몬스터 Kill 마다 1,000 경험치 추가로 받기",
+                    IDC_TEXT3,28,272,188,9,0,WS_EX_TRANSPARENT
+    LTEXT           "키보드 F4 - Gold 획득시 마다 1,000 Gold 추가로 받기",
+                    IDC_TEXT4,28,283,190,9,0,WS_EX_TRANSPARENT
+    LTEXT           "3. 게임으로 돌아와 게임화면에서 원하는치트를 실행한다.",
+                    IDC_STATIC,18,236,203,8
+    LTEXT           "ON",IDC_STATIC_ON,211,225,10,8,0,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "spf2t.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP9             BITMAP  DISCARDABLE     "bitmap9.bmp"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
