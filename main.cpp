@@ -1,3 +1,7 @@
+/*
+created by password123456
+*/
+
 #include <windows.h>
 #include <wininet.h>
 #include "resource.h"
@@ -92,7 +96,7 @@ BOOL CALLBACK MainDlgProc(HWND hDlg,UINT iMessage,WPARAM wParam,LPARAM lParam)
 			}
 		}
 	
-		if ( Textcheck == 2) // ON / OFF µÑ´Ù OFF(°ËÀº»ö)
+		if ( Textcheck == 2) // ON / OFF ë‘˜ë‹¤ OFF(ê²€ì€ìƒ‰)
 		{
 			if((HWND)lParam == GetDlgItem(hDlg, IDC_STATIC_ON))
 			{
@@ -114,7 +118,7 @@ BOOL CALLBACK MainDlgProc(HWND hDlg,UINT iMessage,WPARAM wParam,LPARAM lParam)
 			hWindow = ::FindWindow(NULL, CAPTION_NAME);
 			if (!hWindow)
 			{
-				MessageBox(NULL,"Torchlight °¡ ½ÇÇàµÇÁö ¾Ê¾Ò½À´Ï´Ù.", NULL,MB_OK | MB_ICONWARNING);
+				MessageBox(NULL,"Torchlight ê°€ ì‹¤í–‰ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.", NULL,MB_OK | MB_ICONWARNING);
 				return 0;
 			}
 			GetWindowThreadProcessId (hWindow, &dwProcessId);
@@ -132,12 +136,12 @@ BOOL CALLBACK MainDlgProc(HWND hDlg,UINT iMessage,WPARAM wParam,LPARAM lParam)
 			
 			hFind = FindFirstFile(szDllFullname, &FindDLLFile);
 			
-			if (hFind == INVALID_HANDLE_VALUE) // ÆÄÀÏÀÌ ¾øÀ» °æ¿ì
+			if (hFind == INVALID_HANDLE_VALUE) // íŒŒì¼ì´ ì—†ì„ ê²½ìš°
 			{
-				MessageBox(NULL,szDllFullname,"ÆÄÀÏÀ» Ã£À» ¼ö ¾ø½À´Ï´Ù.",MB_OK);
+				MessageBox(NULL,szDllFullname,"íŒŒì¼ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.",MB_OK);
 				Textcheck=0;
 			}
-			else // Ã£¾ÒÀ» °æ¿ì 
+			else // ì°¾ì•˜ì„ ê²½ìš° 
 			{
 				InjectDll(hProcess);
 				Textcheck=0;
